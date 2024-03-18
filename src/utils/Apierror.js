@@ -5,14 +5,14 @@ class Apierror extends Error{
         errors=[],
         stack=""
     ){
-        super(message);
-        this.statusCode=statusCode;
-        this.data=NULL;
-        this.message=message;
-        this.success=false;
-        this.errors=errors;
+        super(message)
+        this.statusCode=statusCode
+        this.data=NULL
+        this.message=message
+        this.success=false
+        this.errors=errors
         if(stack){
-            this.stack=stack;
+            this.stack=stack
         }
         else{
             Error.captureStackTrace(this,this.constructor)

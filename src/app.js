@@ -20,12 +20,12 @@ app.use(cookieParser());
 //routes import
 import userRouter from "./routes/user.routes.js";
 
-app.get('/', (req,res)=>{
-    res.send("Connected");
-})
-app.listen(process.env.PORT,()=>{
-    console.log("Connected");
-})
+// app.get('/', (req,res)=>{
+//     res.send("Connected");
+// })
+// app.listen(process.env.PORT,()=>{
+//     console.log("Connected");
+// })
 
 //routes declaration
 app.use("/api/v1/users",userRouter);
